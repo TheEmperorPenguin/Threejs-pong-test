@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Three.js 101</title>
+  <!--  Simple reset to delete the margins  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0;overflow: hidden; }
+    canvas { width: 100%; height: 100% }
+    #Score {
+      position: absolute;
+      top: 10px;
+      font-size: 40px;
+      font-family: 'Press Start 2P', arial, serif;
+      color: aliceblue;
+      width: 100%;
+      text-align: center;
+      z-index: 100;
+      display:block;
+    }
+  </style>
+  <!--  Three.js CDN  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r83/three.min.js"></script>
+  <script type="text/javascript" src="../libs/stats.js"></script>
+  <script type="text/javascript" src="../libs/dat.gui.js"></script>
+</head>
+<body>
+  <!--  Our code  -->
+  <div id="Stats-output"></div>
+  <div id="Score"></div>
+  <div id="WebGL-output">
+  </div>
+  <script src="app.js"></script>
+
+</body>
+</html>
